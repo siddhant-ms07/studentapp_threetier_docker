@@ -2,14 +2,14 @@ version:  "3.8"
 
 services: 
    frontendimg:  
-     build:  /root/new-docker-three-tier/frontend
+     build:  /root/studentapp_threetier_docker/frontend
      container_name : frontend
      ports :
        - "80:80"
      network_mode: 
       bridge
    backendimg:
-     build: /root/new-docker-three-tier/backend
+     build: /root/studentapp_threetier_docker/backend
      container_name: backend
      depends_on: 
           - "frontendimg"
