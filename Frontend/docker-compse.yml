@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  Frontending:
+    build: .
+      container_name: Frontend
+      ports: 
+        - 80:80
